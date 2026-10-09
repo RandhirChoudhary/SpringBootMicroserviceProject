@@ -1,0 +1,7 @@
+*.jar
+*.war
+*.war.original
+*/layers/*
+*/target/*.war
+*/target/*.jar
+*.class

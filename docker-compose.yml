@@ -1,0 +1,128 @@
+services:
+  kafka:
+    image: apache/kafka-native
+    ports:
+      - "9092:9092"
+    networks:
+      - microservices-network
+    environment:
+      # Configure listeners for both docker and host communication
+      KAFKA_LISTENERS: CONTROLLER://localhost:9091,HOST://0.0.0.0:9092,DOCKER://0.0.0.0:9093
+      KAFKA_ADVERTISED_LISTENERS: HOST://localhost:9092,DOCKER://kafka:9093
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,DOCKER:PLAINTEXT,HOST:PLAINTEXT
+
+      # Settings required for KRaft mode
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@localhost:9091
+
+      # Listener to use for broker-to-broker communication
+      KAFKA_INTER_BROKER_LISTENER_NAME: DOCKER
+
+      # Required for a single node cluster
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  kafka-ui:
+          image: kafbat/kafka-ui:main
+          ports:
+            - "8085:8080"
+          environment:
+            DYNAMIC_CONFIG_ENABLED: "true"
+            KAFKA_CLUSTERS_0_NAME: local
+            KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9093
+          depends_on:
+            - kafka
+    ## Zipkin
+  zipkin:
+        image: openzipkin/zipkin
+        container_name: zipkins
+        ports:
+          - "9411:9411"
+        networks:
+          - microservices-network
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    restart: unless-stopped
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - microservices-network
+    depends_on:
+      - product-service
+      - order-service
+      - inventory-service
+      - notification-service
+  grafana:
+      image: grafana/grafana
+      container_name: grafana
+      ports:
+        - "3000:3000"
+      restart: unless-stopped
+      environment:
+        - GF_SECURITY_ADMIN_USER=admin
+        - GF_SECURITY_ADMIN_PASSWORD=grafana
+      volumes:
+        - ./grafana:/var/lib/grafana
+      networks:
+            - microservices-network
+      depends_on:
+        - prometheus
+  inventory-service:
+    image: randhir1712/inventory-service:latest
+    networks:
+      - microservices-network
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka:password@discovery-server:8761/eureka/
+    depends_on:
+      - api-gateway
+      - discovery-server
+  product-service:
+    image: randhir1712/product-service:latest
+    networks:
+      - microservices-network
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka:password@discovery-server:8761/eureka/
+    depends_on:
+      - api-gateway
+      - discovery-server
+  order-service:
+    image: randhir1712/order-service:latest
+    networks:
+      - microservices-network
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka:password@discovery-server:8761/eureka/
+    depends_on:
+      - inventory-service
+      - api-gateway
+      - discovery-server
+      - zipkin
+  notification-service:
+    image: randhir1712/notification-service:latest
+    networks:
+      - microservices-network
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka:password@discovery-server:8761/eureka/
+    depends_on:
+      - api-gateway
+      - discovery-server
+      - zipkin
+  api-gateway:
+    image: randhir1712/api-gateway:latest
+    networks:
+      - microservices-network
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka:password@discovery-server:8761/eureka/
+    depends_on:
+      - discovery-server
+      - zipkin
+  discovery-server:
+    image: randhir1712/discovery-server:latest
+    networks:
+      - microservices-network
+networks:
+    microservices-network:
+    #driver: bridge

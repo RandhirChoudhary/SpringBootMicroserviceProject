@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+{
+  "manifestVersion": "2.0.0",
+  "signatureType": "grafana",
+  "signedByOrg": "grafana",
+  "signedByOrgName": "Grafana Labs",
+  "plugin": "influxdb",
+  "version": "13.1.6",
+  "time": 1790609701236,
+  "keyId": "7e4d0c6a708866e7",
+  "files": {
+    "module.js": "dc66f2f560d7aa34d2f7adc6b2ac40984b67fe661a9eb8e72dae976d3b7171c8",
+    "156.js.map": "0222ddac91cc85b6778b0c26868f3ed53b02bbade9d5904fda25af06c83c66af",
+    "go_plugin_build_manifest": "283c460db42a0dfd138fb23c620a83efca49593915644932926aa5647935d83a",
+    "LICENSE": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+    "sql-query-editor.js": "72be6e3f220528cb81e60fb50facfedabb31d4f94048c9cfc46b44ba53231b44",
+    "README.md": "b09743842a186a9d3d4170a3b60afa607492eb6491936763ffcc3ca6e8177a3b",
+    "CHANGELOG.md": "1daaf878bb60195d2ca303ae12ccb8a87d44810d83085ff9e7a554bed731b4e6",
+    "sql-query-editor.js.map": "4a1816a5d2058d3d15343764b29f7f1d8f0ad8b934bce652fa2da0fac81e3653",
+    "module.js.map": "26c5d9630164db9d14b4342d8c28fc7f3d8b47c76b886a5b55747d440f305a7c",
+    "156.js": "99d2e4693ebafc54079987726c9c18909d847f6194f3ecc878d80b2c44049e6b",
+    "plugin.json": "681e5a955e83c9485d1e49dffa0beaf0a0e4a9b452c33f73024a13787078cd9b",
+    "img/influxdb_logo.svg": "1398a1b949f402d17b11547710f2a9886f833a17cc64bf1a1536c0c463b4e489",
+    "gpx_grafana_influxdb_datasource_linux_amd64": "c44e996be027089cde3ca60879baed943df66a3b555c9c8a9b614893afd7b0a7",
+    "query_help.md": "9e1901b0e59b0bee6b09d1956e54cfd3ebd49ed5794f52868cfc84d9eff177a2",
+    "module.js.LICENSE.txt": "5f8c7a54980853e89db8f42f29cf29c65704398d93e72eeddc2bad0b21813c62"
+  }
+}
+-----BEGIN PGP SIGNATURE-----
+
+wsA+BAETCgBtBYJquoklCRB+TQxqcIhm50UUAAAAAAAcACBzYWx0QG5vdGF0
+aW9ucy5vcGVucGdwanMub3JnJ77KmHxMM7DtARFhOBHlf+xLP729Oin5bedk
+ebI4lZ8WIQTzOyW2kQdOhGNlcPN+TQxqcIhm5wAAIFECCQFLZSDYiaRrBuXF
+HaWoDaHoTZTxomcaCXJzLADS04L3c9QyOAvjOgU4sJD1xu2Es6bjVDKQYtcR
+e12zUkehNprJpgIGMxsQxI5dcMXZXJ0BArrX7BBv3X/YAqlkazFHJLVGnTCH
+HwrhJdSUUT3kIpPPwp2iMjHEAZmbwD3OLRU89oLr9P4=
+=cOMx
+-----END PGP SIGNATURE-----

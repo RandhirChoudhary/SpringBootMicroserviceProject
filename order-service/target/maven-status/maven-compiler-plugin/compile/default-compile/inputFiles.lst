@@ -1,0 +1,11 @@
+E:\Projects\microservice-new\order-service\src\main\java\com\rktech\order_service\config\WebClientConfig.java
+E:\Projects\microservice-new\order-service\src\main\java\com\rktech\order_service\controller\OrderController.java
+E:\Projects\microservice-new\order-service\src\main\java\com\rktech\order_service\dto\InventoryResponse.java
+E:\Projects\microservice-new\order-service\src\main\java\com\rktech\order_service\dto\OrderLineItemsDto.java
+E:\Projects\microservice-new\order-service\src\main\java\com\rktech\order_service\dto\OrderRequest.java
+E:\Projects\microservice-new\order-service\src\main\java\com\rktech\order_service\event\OrderPlacedEvent.java
+E:\Projects\microservice-new\order-service\src\main\java\com\rktech\order_service\model\Order.java
+E:\Projects\microservice-new\order-service\src\main\java\com\rktech\order_service\model\OrderLineItems.java
+E:\Projects\microservice-new\order-service\src\main\java\com\rktech\order_service\OrderServiceApplication.java
+E:\Projects\microservice-new\order-service\src\main\java\com\rktech\order_service\repository\OrderRepository.java
+E:\Projects\microservice-new\order-service\src\main\java\com\rktech\order_service\service\OrderService.java

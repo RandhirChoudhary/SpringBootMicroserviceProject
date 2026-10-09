@@ -1,0 +1,12 @@
+com\rktech\order_service\model\Order.class
+com\rktech\order_service\service\OrderService.class
+com\rktech\order_service\dto\OrderLineItemsDto.class
+com\rktech\order_service\event\OrderPlacedEvent.class
+com\rktech\order_service\config\WebClientConfig.class
+com\rktech\order_service\controller\OrderController.class
+com\rktech\order_service\dto\InventoryResponse.class
+com\rktech\order_service\dto\InventoryResponse$InventoryResponseBuilder.class
+com\rktech\order_service\model\OrderLineItems.class
+com\rktech\order_service\OrderServiceApplication.class
+com\rktech\order_service\dto\OrderRequest.class
+com\rktech\order_service\repository\OrderRepository.class

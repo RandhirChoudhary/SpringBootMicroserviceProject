@@ -1,0 +1,68 @@
+{
+    "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
+    "type": "app",
+    "name": "Grafana Advisor",
+    "id": "grafana-advisor-app",
+    "autoEnabled": true,
+    "info": {
+        "keywords": [
+            "app"
+        ],
+        "description": "",
+        "author": {
+            "name": "Grafana"
+        },
+        "logos": {
+            "small": "img/logo.svg",
+            "large": "img/logo.svg"
+        },
+        "screenshots": [],
+        "version": "1.1.0",
+        "updated": "2026-10-01"
+    },
+    "includes": [
+        {
+            "type": "page",
+            "name": "Advisor",
+            "path": "/a/grafana-advisor-app",
+            "addToNav": true,
+            "defaultNav": true,
+            "role": "Admin"
+        }
+    ],
+    "extensions": {
+        "addedFunctions": [
+            {
+                "title": "useCompletedChecks",
+                "description": "Hook to check if all advisor checks are completed",
+                "targets": [
+                    "grafana/advisor/completed-checks/v1"
+                ]
+            },
+            {
+                "title": "useCreateChecks",
+                "description": "Hook to create advisor checks",
+                "targets": [
+                    "grafana/advisor/create-checks/v1"
+                ]
+            },
+            {
+                "title": "useRetryCheck",
+                "description": "Hook to retry a specific advisor check",
+                "targets": [
+                    "grafana/advisor/retry-check/v1"
+                ]
+            }
+        ]
+    },
+    "dependencies": {
+        "grafanaDependency": ">=13.2.0-0",
+        "plugins": []
+    },
+    "languages": [
+        "en-US",
+        "es-ES",
+        "de-DE"
+    ],
+    "buildMode": "production"
+}

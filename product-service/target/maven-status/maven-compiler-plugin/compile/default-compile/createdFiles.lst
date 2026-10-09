@@ -1,0 +1,10 @@
+com\rktech\product_service\repo\ProductRepository.class
+com\rktech\product_service\dto\ProductRequest.class
+com\rktech\product_service\model\Product.class
+com\rktech\product_service\ProductServiceApplication.class
+com\rktech\product_service\service\ProductService.class
+com\rktech\product_service\dto\ProductResponse$ProductResponseBuilder.class
+com\rktech\product_service\dto\ProductRequest$ProductRequestBuilder.class
+com\rktech\product_service\dto\ProductResponse.class
+com\rktech\product_service\model\Product$ProductBuilder.class
+com\rktech\product_service\controller\ProductController.class

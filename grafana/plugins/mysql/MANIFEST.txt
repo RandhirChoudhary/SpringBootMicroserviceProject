@@ -1,0 +1,39 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+{
+  "manifestVersion": "2.0.0",
+  "signatureType": "grafana",
+  "signedByOrg": "grafana",
+  "signedByOrgName": "Grafana Labs",
+  "plugin": "mysql",
+  "version": "13.1.3",
+  "time": 1790608930589,
+  "keyId": "7e4d0c6a708866e7",
+  "files": {
+    "module.js": "2f2403971cfcf358cf01491fa3d78d82f4e9ed4d4207dc71cc092897717b6100",
+    "156.js.map": "ecde3c9b0efde902e5e82d27684a954117373e563f0ceb3bc506923f1cbba959",
+    "go_plugin_build_manifest": "c79bbbee0297b28df875add94e0201d9c711ce2061c374bf0396b965888c7289",
+    "LICENSE": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+    "gpx_grafana-mysql-datasource_linux_amd64": "84ec300b06dcf83c234e30d0579ae2d006cd6c48d5aa43dff9a07eae8ad4a2c0",
+    "sql-query-editor.js": "c43c6ef1b3dbb4a56d9041c57123dece0948d8ac151806e1392e3364f55cc28b",
+    "README.md": "9bd55a5dd6d8335ef15058cabbeaa66a1eec928055a416391502534445d0a283",
+    "CHANGELOG.md": "b2cff57d1871d22668124c3dd81e1cb80fcc60d4394537d3624e3850bb92736e",
+    "sql-query-editor.js.map": "2728aeda47cc6ec830d79e0510d46613b0b0655dd7283910b5b93cbb5e55988f",
+    "module.js.map": "3555fc3a3e3d7fa8966a9d00cb802c8e1a88fa91a7a2598e25d06917f0d2fa98",
+    "156.js": "f68279fd351445f6a64c6ac47219f251d55a2784c6c7cd5753def815b7015c22",
+    "plugin.json": "355533d981c470ec8785eff16a3d926bac5c349b647033b5c751e951456a4fa1",
+    "img/mysql_logo.svg": "3cdcf35878c4b16d63e45abf0d5a459edbb80f746fd5bf08d85a0fb339ee85e7",
+    "module.js.LICENSE.txt": "5f8c7a54980853e89db8f42f29cf29c65704398d93e72eeddc2bad0b21813c62"
+  }
+}
+-----BEGIN PGP SIGNATURE-----
+
+wsA+BAETCgBtBYJquoYiCRB+TQxqcIhm50UUAAAAAAAcACBzYWx0QG5vdGF0
+aW9ucy5vcGVucGdwanMub3JnEV11uzdESm99V3SUdq38BNpgYM6yJvgr8qHX
+5GUnuhIWIQTzOyW2kQdOhGNlcPN+TQxqcIhm5wAAtUYCCQGJ7I+6/MyHzyQ6
+Xq975GL8UuuEzBJz/gFtu8ORXrAK2oo70sn1TpmJFhGic7TSIS2NgakSSkrr
+PY2sxe5HWBBFHAIIs1mWz5L8PZw8VzV0YjMvTTBwWYuCbCohtIo/YmTXJST2
+0SnTf783RjKKXEvk5rDDoSkr1U2HlJBFzdz/m50Q9sI=
+=3ubk
+-----END PGP SIGNATURE-----

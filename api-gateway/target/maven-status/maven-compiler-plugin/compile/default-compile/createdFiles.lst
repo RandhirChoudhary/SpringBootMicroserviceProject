@@ -1,0 +1,3 @@
+com\rktech\apigateway\ApiGatewayApplication.class
+routes\Routes.class
+config\SecurityConfig.class

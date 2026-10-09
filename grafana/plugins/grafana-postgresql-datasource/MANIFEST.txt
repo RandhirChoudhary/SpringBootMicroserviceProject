@@ -1,0 +1,39 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+{
+  "manifestVersion": "2.0.0",
+  "signatureType": "grafana",
+  "signedByOrg": "grafana",
+  "signedByOrgName": "Grafana Labs",
+  "plugin": "grafana-postgresql-datasource",
+  "version": "13.0.4",
+  "time": 1790608993432,
+  "keyId": "7e4d0c6a708866e7",
+  "files": {
+    "module.js": "0a37ce4835928c2b3462d89a3f63f1a179a24c40b2aa5945d849ec04d55d0dd6",
+    "156.js.map": "38afa08f2f4d44f8b6bf07f1b4dd3736cf0465e68b503105e4580b291970fd32",
+    "go_plugin_build_manifest": "b3386a7458df8dec5055723de0a42618037c1789284cbd2b6128204bb55dd75c",
+    "LICENSE": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+    "sql-query-editor.js": "a3441a562a3ca2f94851319f7ea8ff5e4aa4ffeae1d55dc78f6d61019313ff86",
+    "README.md": "81880bcd86dc72f6bd848ae81d8860ee2dc6666bfa4cdd28e0d5523871032efa",
+    "CHANGELOG.md": "e1c9ddba88bb665d9962cc989f7a11b6aa3094ce543f2f696d2f80dccdbdc40a",
+    "sql-query-editor.js.map": "fda272462d83ab3d447c1a33ed08c2ccb9f64ad231b17507ac2334014adc5ef7",
+    "module.js.map": "b09ea15667ca3131e28b8a5da950af0a397ed41454bda8b3ea31c45ccf7f884a",
+    "gpx_grafana_postgresql_datasource_linux_amd64": "66c02c3ea5a3f994318f94c6bbc2519e48fe23e15f8183ec38dd2ed098690e72",
+    "156.js": "1768faa0b5deb4aa791e429bb8d43fafdfd6666ea068740b429f51e5bceb6f2a",
+    "plugin.json": "bd809506b4f9cc5f0a88fea9f36383205a7b237569c567f66fc74f59f37b1071",
+    "img/postgresql_logo.svg": "dc3100e92744f29bb331dbd00ea4a1da6aa603aaa726b994a47a1cf80f3387be",
+    "module.js.LICENSE.txt": "5f8c7a54980853e89db8f42f29cf29c65704398d93e72eeddc2bad0b21813c62"
+  }
+}
+-----BEGIN PGP SIGNATURE-----
+
+wsA/BAETCgBtBYJquoZhCRB+TQxqcIhm50UUAAAAAAAcACBzYWx0QG5vdGF0
+aW9ucy5vcGVucGdwanMub3JnxByvgMMdbE1iIuNJkJEitPMqAoUzRxZudl5L
+HWc4mxgWIQTzOyW2kQdOhGNlcPN+TQxqcIhm5wAAE2ACCQFv9fFIWaDoyqxd
+T9e3d5YOwiTsSSbF6XfQwLywgj8MnhuNCqPj5EqUYx2rhrPEWCjlw3/KtmTe
+n/xIyBWKiSpsmgIJAXIUTrdsGJ8/UnIcQCrNTKhV/BshO21/tekZJGkmIqeN
+Gj0qjthE3kbsJJosKPTjMKhQTTgO+/zzIdOrYC/TsKzh
+=MpCz
+-----END PGP SIGNATURE-----
